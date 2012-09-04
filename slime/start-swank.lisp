@@ -16,7 +16,7 @@
 (swank-loader:init
  :delete nil         ; delete any existing SWANK packages
  :reload nil         ; reload SWANK, even if the SWANK package already exists
- :load-contribs t)   ; load all contribs
+ :load-contribs nil)   ; load all contribs
 
 (swank:create-server :port 4005
                      ;; if non-nil the connection won't be closed
